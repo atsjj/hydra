@@ -1,0 +1,147 @@
+FORMAT: 1A
+
+# Hydra
+
+Summit Electric Supply's API Documentation
+
+## Accounts [/accounts]
+
+### Fetch All Accounts [GET]
+
++ Response 200 (application/vnd.api+json)
+    
+    + Body
+        
+            {
+                "data": [
+                    {
+                        "id": "1",
+                        "type": "accounts",
+                        "attributes": {
+                            "address": "5213 Williamson Tunnel",
+                            "billing-address": "70622 Rolando Squares",
+                            "billing-zip": "29413-9087",
+                            "city": "East Newtonfort",
+                            "county": "Cambridgeshire",
+                            "email": "Christy24@yahoo.com",
+                            "fax": "1-159-453-5495",
+                            "fax-ext": "4567",
+                            "name": "Beatty - O'Connell",
+                            "phone": "(070) 760-0912",
+                            "phone-ext": "3456",
+                            "state": "MO",
+                            "zip": "68599-9757"
+                        }
+                    }, {
+                        "id": "2",
+                        "type": "accounts",
+                        "attributes": {
+                            "address": "522 Ondricka Unions",
+                            "billing-address": "975 Cyril Well",
+                            "billing-zip": "48033",
+                            "city": "Maybellehaven",
+                            "county": "Buckinghamshire",
+                            "email": "Enrico46@hotmail.com",
+                            "fax": "(698) 014-3761 x2534",
+                            "fax-ext": "4567",
+                            "name": "Senger - Kshlerin",
+                            "phone": "(323) 155-8397",
+                            "phone-ext": "4567",
+                            "state": "HI",
+                            "zip": "91928-2280"
+                        }
+                    }
+                ]
+            }
+
+## Account [/accounts/{id}]
+
+### View an Account [GET]
+
++ Response 200 (application/vnd.api+json)
+    
+    + Body
+        
+            {
+                "data": {
+                    "id": "1",
+                    "type": "accounts",
+                    "attributes": {
+                        "address": "5213 Williamson Tunnel",
+                        "billing-address": "70622 Rolando Squares",
+                        "billing-zip": "29413-9087",
+                        "city": "East Newtonfort",
+                        "county": "Cambridgeshire",
+                        "email": "Christy24@yahoo.com",
+                        "fax": "1-159-453-5495",
+                        "fax-ext": "4567",
+                        "name": "Beatty - O'Connell",
+                        "phone": "(070) 760-0912",
+                        "phone-ext": "3456",
+                        "state": "MO",
+                        "zip": "68599-9757"
+                    }
+                }
+            }
+
+## Customers [/customers]
+
+### Fetch All Customers [GET]
+
++ Response 200 (application/vnd.api+json)
+
+    + Body
+    
+            {
+                "data": [
+                    {
+                        "id": "1",
+                        "type": "customers",
+                        "attributes": {
+                            "first-name": "Steve",
+                            "last-name": "Jabour",
+                            "email": "steve.jabour@summit.com",
+                            "office-phone": "1-407-138-5138",
+                            "cell-phone": "736.388.7811 x2379",
+                            "city": "East Timmy",
+                            "state": "ID"
+                        }
+                    }, {
+                        "id": "2",
+                        "type": "customers",
+                        "attributes": {
+                            "first-name": "Thomas",
+                            "last-name": "Pastinsky",
+                            "email": "thomas.pastinsky@summit.com",
+                            "office-phone": "022.033.9914 x48115",
+                            "cell-phone": "568.670.1380 x2984",
+                            "city": "Millerstad",
+                            "state": "ME"
+                        }
+                    }
+                ]
+            }
+
+## Customer [/customers/{id}]
+
+### View a Customer [GET]
+
++ Response 200 (application/vnd.api+json)
+    
+    + Body
+        
+            {
+                "data": {
+                    "id": "2",
+                    "type": "customers",
+                    "attributes": {
+                        "first-name": "Thomas",
+                        "last-name": "Pastinsky",
+                        "email": "thomas.pastinsky@summit.com",
+                        "office-phone": "022.033.9914 x48115",
+                        "cell-phone": "568.670.1380 x2984",
+                        "city": "Millerstad",
+                        "state": "ME"
+                    }
+                }
+            }
