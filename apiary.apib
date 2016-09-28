@@ -13,7 +13,7 @@ Summit Electric Supply's API Documentation
     + Body
         
             {
-                "data": [
+                "dater": [
                     {
                         "id": "1",
                         "type": "accounts",
@@ -53,10 +53,20 @@ Summit Electric Supply's API Documentation
                     }
                 ]
             }
+    
+    + Schema
+    
+            {
+                "$schema": "http://json-schema.org/schema"
+            }
 
 ## Account [/accounts/{id}]
 
 ### View an Account [GET]
+
++ Parameters
+
+    + id: `1` (number, required) - The id of an account.
 
 + Response 200 (application/vnd.api+json)
     
@@ -83,6 +93,12 @@ Summit Electric Supply's API Documentation
                     }
                 }
             }
+    
+    + Schema
+    
+            {
+                "$schema": "http://json-schema.org/schema"
+            }
 
 ## Customers [/customers]
 
@@ -98,18 +114,6 @@ Summit Electric Supply's API Documentation
                         "id": "1",
                         "type": "customers",
                         "attributes": {
-                            "first-name": "Steve",
-                            "last-name": "Jabour",
-                            "email": "steve.jabour@summit.com",
-                            "office-phone": "1-407-138-5138",
-                            "cell-phone": "736.388.7811 x2379",
-                            "city": "East Timmy",
-                            "state": "ID"
-                        }
-                    }, {
-                        "id": "2",
-                        "type": "customers",
-                        "attributes": {
                             "first-name": "Thomas",
                             "last-name": "Pastinsky",
                             "email": "thomas.pastinsky@summit.com",
@@ -118,13 +122,35 @@ Summit Electric Supply's API Documentation
                             "city": "Millerstad",
                             "state": "ME"
                         }
+                    }, {
+                        "id": "2",
+                        "type": "customers",
+                        "attributes": {
+                            "first-name": "Steve",
+                            "last-name": "Jabour",
+                            "email": "steve.jabour@summit.com",
+                            "office-phone": "1-407-138-5138",
+                            "cell-phone": "736.388.7811 x2379",
+                            "city": "East Timmy",
+                            "state": "ID"
+                        }
                     }
                 ]
+            }
+    
+    + Schema
+    
+            {
+                "$schema": "http://json-schema.org/schema"
             }
 
 ## Customer [/customers/{id}]
 
 ### View a Customer [GET]
+
++ Parameters
+
+    + id: `1` (number, required) - The id of a customer.
 
 + Response 200 (application/vnd.api+json)
     
@@ -132,7 +158,7 @@ Summit Electric Supply's API Documentation
         
             {
                 "data": {
-                    "id": "2",
+                    "id": "1",
                     "type": "customers",
                     "attributes": {
                         "first-name": "Thomas",
@@ -144,4 +170,10 @@ Summit Electric Supply's API Documentation
                         "state": "ME"
                     }
                 }
+            }
+    
+    + Schema
+    
+            {
+                "$schema": "http://json-schema.org/schema"
             }
